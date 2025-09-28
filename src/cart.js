@@ -94,7 +94,7 @@ button_pagar.onclick = function(){
     Swal.fire({
         title: "Pago realizado con exito!",
         text: "Gracias por tu compra!",
-        imageUrl: "../images/gato-pago.gif",
+        imageUrl: "https://media1.tenor.com/m/tsVktdclv2MAAAAd/kuroneko-kurogami-neko-mascot-mascota-gato-gatete-shut-up-and-take-my-money-fry-futurama.gif",
         imageWidth: 400,
         imageHeight: 200,
         imageAlt: "Custom image"
