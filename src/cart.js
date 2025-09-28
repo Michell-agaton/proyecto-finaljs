@@ -94,7 +94,7 @@ button_pagar.onclick = function(){
     Swal.fire({
         title: "Pago realizado con exito!",
         text: "Gracias por tu compra!",
-        imageUrl: "./images/gato-pago.gif",
+        imageUrl: "../images/gato-pago.gif",
         imageWidth: 400,
         imageHeight: 200,
         imageAlt: "Custom image"

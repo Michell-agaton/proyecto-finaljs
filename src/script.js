@@ -205,11 +205,11 @@ import { obtenerApi, carrito_guardar_producto, carrito_obtener_productos, carrit
          width: 600,
          padding: "3em",
          color: "#716add",
-         background: "#fff url(./images/trees.png)",
+         background: "#fff url(../images/trees.png)",
          confirmButtonText: "Cuack",
          backdrop: `
             rgba(0,0,123,0.4)
-            url("./images/nyan-cat.gif")
+            url("../images/nyan-cat.gif")
             left top
             repeat
          `
