@@ -12,9 +12,29 @@
 </head>
 
 <body>
+    <header>
+        <!-- Barra de navegacion-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" id="logoGato"  href="./index.html">La Michi tienda</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            <a href="./cart.html">Carrito</a>
+                            <span class="badge bg-dark text-white ms-1 rounded-pill"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <main>
-
-
         <section class="h-100 h-custom" style="background-color: #eee;">
             <div class="container py-5 h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">
@@ -49,28 +69,23 @@
                                                 <form class="mt-4">
                                                     <div data-mdb-input-init class="form-outline form-white mb-4">
                                                         <input type="text" id="typeName"
-                                                            class="form-control form-control-lg" siez="20"
+                                                            class="form-control form-control-lg"
                                                             placeholder="Gatolomeo ..." />
                                                         <label class="form-label" for="typeName">Nombre en la tarjeta</label>
                                                     </div>
 
                                                     <div data-mdb-input-init class="form-outline form-white mb-4">
                                                         <input type="number" id="typeText"
-                                                            class="form-control form-control-lg" siez="17"
-                                                            placeholder="1234 5678 9012 3457" minlength="19"
-                                                            maxlength="19" />
+                                                            class="form-control form-control-lg" 
+                                                            placeholder="1234 5678 9012 3457"/>
                                                         <label class="form-label" for="typeText">Numero de tarjeta</label>
                                                     </div>
 
                                                     <div class="row mb-4">
                                                         <div class="col-md-6">
                                                             <div data-mdb-input-init class="form-outline form-white">
-                                                                <input type="date" id="typeExp"
-                                                                    class="form-control form-control-lg"
-                                                                    placeholder="MM/YYYY" size="7" id="exp"
-                                                                    minlength="7" maxlength="7" />
-                                                                <label class="form-label"
-                                                                    for="typeExp">Caducidad</label>
+                                                                <input type="text" class="form-control form-control-lg"placeholder="MM/YYYY"/>
+                                                                <label class="form-label" for="typeExp">Caducidad</label>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
@@ -85,9 +100,8 @@
                                                     </div>
 
                                                 </form>
-
+                                                <!--Dibuja una separacion con margen-->
                                                 <hr class="my-4">
-
                                                 <div class="d-flex justify-content-between">
                                                     <p class="mb-2">Total</p>
                                                     <p class="mb-2" id="total"></p>
@@ -105,9 +119,7 @@
                                         </div>
 
                                     </div>
-
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -115,6 +127,11 @@
             </div>
         </section>
     </main>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; LA MICHI-TIENDA 2025</p></div>
+    </footer>
+
     <script type="module" src="./src/cart.js"></script>
 
 </body>
